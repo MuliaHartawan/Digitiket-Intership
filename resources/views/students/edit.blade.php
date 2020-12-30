@@ -8,8 +8,9 @@
             <div class="col-6">
                 <h1 class="mt-3">Form Tambah Student</h1>
 
-              <form action="{{route('student-store')}}" method="post">
+              <form action="{{route('students/'. $student-id)}}" method="post">
               @csrf
+                @method('put')
                 <div class="form-group">
                     <label for="nama">Nama</label>
                     <input type="text" class="form-control @error('nama') is-invalid @enderror" id="nama" name="nama" placeholder="Masukkan Nama"></input>

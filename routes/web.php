@@ -22,3 +22,5 @@ Route::get('/students/create', 'StudentsController@create');
 Route::get('/students/{student}', 'StudentsController@show');
 Route::post('/students/store', 'StudentsController@store')->name('student-store');
 Route::get('/students/{student}/edit', 'StudentsController@edit')->name('student-edit');
+Route::put('/students/{student}', 'StudentsController@update');
+Route::delete('/students/{student}', 'StudentsController@destroy');
